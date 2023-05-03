@@ -6,7 +6,11 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        110: "35rem",
+      },
+    },
     fontFamily: {
       Helvetica: ["Helvetica Neue", "sans-serif"],
     },

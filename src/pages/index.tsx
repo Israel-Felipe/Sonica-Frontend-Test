@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import HomeBanner from "../components/HomeBanner";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         />
       </Head>
       <Header />
+      <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start ">
+        <HomeBanner />
+      </main>
     </>
   );
 }
