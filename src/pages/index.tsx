@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HomeBanner from "../components/HomeBanner";
 import ConnectedServices from "../components/ConnectedServices";
+import HeartInterchain from "../components/HeartInterchain";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start ">
         <HomeBanner />
         <ConnectedServices />
+        <HeartInterchain />
       </main>
     </>
   );

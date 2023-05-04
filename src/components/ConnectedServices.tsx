@@ -12,7 +12,7 @@ export default function ConnectedServices() {
       <motion.nav
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ amount: 0.25 }}
         variants={textTransition(0.4)}
         className="relative flex-col xl:w-3/5"
       >
@@ -91,7 +91,7 @@ export default function ConnectedServices() {
       <motion.nav
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ amount: 0.25 }}
         variants={textTransition(0.7)}
         className="xl:w-2/5 text-center xl:text-right
         pt-12 sm:pt-24"
@@ -141,28 +141,3 @@ export const textTransition = (delay: number) => ({
     },
   },
 });
-
-export const textVariant2 = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "tween",
-      ease: "easeIn",
-    },
-  },
-};
-
-export const textContainer = {
-  hidden: {
-    opacity: 0,
-  },
-  show: (i = 1) => ({
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
-  }),
-};

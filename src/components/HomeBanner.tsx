@@ -7,7 +7,7 @@ export default function HomeBanner() {
     <motion.header
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ amount: 0.25 }}
       variants={textTransition(0.4)}
       className="relative w-auto h-auto mt-40 lg:mt-20"
     >
@@ -41,8 +41,8 @@ export default function HomeBanner() {
         variants={textTransition(0.7)}
         className="relative flex justify-center font-Helvetica text-center
         text-[45px] sm:text-[80px] md:text-[100px] lg:text-[125px] xl:text-[153px]
-        leading-[60px] tracking-[0.02em] sm:leading-[100px] xl:leading-[180px]
-        py-16 sm:py-8 md:py-3
+        leading-[60px] sm:leading-[100px] xl:leading-[180px]
+        px-5 py-16 sm:py-8 md:py-3 tracking-[0.02em]
         bg-clip-text text-transparent bg-gradient-to-r from-white via white to-gray-500 z-50"
       >
         The Internet of Blockchains.

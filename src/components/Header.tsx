@@ -6,7 +6,7 @@ export default function Header() {
     <motion.header
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ amount: 0.25 }}
       variants={textTransition(0.4)}
       className="max-w-screen-xl mx-auto
       py-6 sm:py-8 md:py-16 lg:py-16
