@@ -25,7 +25,7 @@ export default function Header() {
         </div>
 
         <a
-          className="hidden md:flex items-center space-x-2 cursor-pointer text-base md:text-lg lg:text-2xl"
+          className="hidden md:flex items-center space-x-2 cursor-pointer text-base md:text-lg lg:text-2xl gap-3"
           href="#"
         >
           <span className="font-medium">Get CRONOS</span>

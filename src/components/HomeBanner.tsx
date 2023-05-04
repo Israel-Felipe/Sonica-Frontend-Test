@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import icosahedron from "../images/icosahedron.png";
-import { motion } from "framer-motion";
 
 export default function HomeBanner() {
   return (
@@ -22,7 +22,9 @@ export default function HomeBanner() {
       >
         <Image
           src={icosahedron}
-          className={`absolute sm:-top-24 w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 filter opacity-70 blur-[5px]
+          className={`absolute sm:-top-24
+          w-32 h-32 md:w-64 md:h-64 lg:w-72 lg:h-72
+          filter opacity-70 blur-[5px]
           }`}
           alt="Icosahedron"
         />
@@ -37,8 +39,8 @@ export default function HomeBanner() {
 
       <motion.span
         variants={textTransition(0.7)}
-        className="relative flex justify-center text-lg font-Helvetica text-center
-        text-[45px] sm:text-[80px] md:text-[100px] lg:text-[120px] xl:text-[150px]
+        className="relative flex justify-center font-Helvetica text-center
+        text-[45px] sm:text-[80px] md:text-[100px] lg:text-[125px] xl:text-[153px]
         leading-[60px] tracking-[0.02em] sm:leading-[100px] xl:leading-[180px]
         py-16 sm:py-8 md:py-3
         bg-clip-text text-transparent bg-gradient-to-r from-white via white to-gray-500 z-50"
@@ -50,7 +52,7 @@ export default function HomeBanner() {
         variants={textTransition(1)}
         className="relative flex justify-center text-center text-lg tracking-[0.05em]
         sm:text-xl md:text-3xl
-        px-8 sm:px-16 md:px-28 lg:px-56 lg:leading-[52px]"
+        px-8 sm:px-16 md:px-28 lg:px-56 lg:leading-[52px] z-50"
       >
         Cronos is an ever expanding ecosystem of connected apps and services,
         built for a decentralized future.
@@ -67,7 +69,9 @@ export default function HomeBanner() {
       >
         <Image
           src={icosahedron}
-          className={`absolute sm:-top-24 lg:-top-96 w-48 h-48 md:w-80 md:h-80 lg:w-110 lg:h-110 filter opacity-60 blur-[8px]
+          className={`absolute sm:-top-24 lg:-top-96
+          w-60 h-60 md:w-80 md:h-80 lg:w-110 lg:h-110 
+          filter opacity-60 blur-[8px]
           }`}
           alt="Icosahedron"
         />
