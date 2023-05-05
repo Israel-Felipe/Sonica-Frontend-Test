@@ -4,6 +4,7 @@ import HomeBanner from "../components/HomeBanner";
 import ConnectedServices from "../components/ConnectedServices";
 import HeartInterchain from "../components/HeartInterchain";
 import HeartInterchainContainerBlocs from "../components/HeartInterchainBlocs";
+import ReceiveTransmissions from "../components/ReceiveTransmissions";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
         <HomeBanner />
         <ConnectedServices />
         <HeartInterchain />
-        <HeartInterchainContainerBlocs></HeartInterchainContainerBlocs>
+        <HeartInterchainContainerBlocs />
+        <ReceiveTransmissions />
       </main>
     </>
   );
