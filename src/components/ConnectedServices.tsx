@@ -66,12 +66,13 @@ export default function ConnectedServices() {
         <motion.div
           variants={textTransition(0.7)}
           className="flex xl:justify-start
-          px-12 md:px-20 lg:px-0 pt-12 gap-12 sm:gap-20 lg:-ml-16 text-[16px] sm:text-[20px]
+          px-12 md:px-20 lg:px-0 pt-12 gap-12 sm:gap-20 lg:-ml-16
           "
         >
-          <div className="flex justify-center">
+          <div className="flex justify-center text-[16px] hover:text-[22px] md:text-[20px]">
             <button
-              className="flex items-center justify-center bg-gradient-to-r from-white via white to-gray-500 z-50 text-black
+              className="flex items-center justify-center bg-gradient-to-r from-white hover:from-indigo-200 via white to-gray-500 hover:to-indigo-500
+              z-50 text-black
               w-[150px] sm:w-[280px] h-[60px] sm:h-[85px]"
             >
               <span className="font-medium">Learn</span>
@@ -79,7 +80,8 @@ export default function ConnectedServices() {
           </div>
 
           <a
-            className="flex items-center justify-center gap-1 sm:gap-4 z-50"
+            className="flex items-center justify-center gap-1 sm:gap-4 z-50
+            text-[16px] hover:text-[22px] md:text-[20px]"
             href="#"
           >
             <span className="font-medium">Explore Tokens</span>

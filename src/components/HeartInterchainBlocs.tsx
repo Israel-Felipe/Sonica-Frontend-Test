@@ -29,12 +29,12 @@ export default function HeartInterchainBlocs() {
         whileInView="show"
         variants={textTransition(0.4)}
         className="flex justify-start
-          px-0 md:px-20 lg:px-0 text-[20px] w-full
+          px-0 md:px-20 lg:px-0 w-full
           "
       >
-        <div className="flex justify-center lg:justify-start w-full">
+        <div className="flex justify-center lg:justify-start w-full text-[16px] hover:text-[22px] md:text-[20px]">
           <button
-            className="flex items-center justify-center bg-gradient-to-r from-white via white to-gray-500 z-50 text-black gap-8
+            className="flex items-center justify-center bg-gradient-to-r from-white hover:from-indigo-200 via white to-gray-500 hover:to-indigo-500 z-50 text-black gap-8
             w-full lg:w-[280px] h-[85px]"
           >
             <span className="font-medium">Cosmos Hub</span>
