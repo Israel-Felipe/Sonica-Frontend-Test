@@ -17,10 +17,10 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
-        <link rel="SHORTCUT ICON" href="../images/icosahedron.png" />
+        <link rel="SHORTCUT ICON" href="./src/images/icosahedron.png" />
       </Head>
 
-      <main className="max-w-screen-xl m-auto">
+      <main className="max-w-screen-lg xl:max-w-screen-xl m-auto">
         <Header />
         <HomeBanner />
         <ConnectedServices />
