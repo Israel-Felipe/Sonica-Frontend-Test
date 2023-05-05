@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { textTransition } from "../utils/Transition";
+import { menuFooter } from "../utils/Menus";
 
 export default function Footer() {
   return (
@@ -42,57 +44,3 @@ function FooterComponents({
     </header>
   );
 }
-
-const menuFooter = [
-  {
-    subject: {
-      title: "Learn",
-      subtitles: ["Introduction", "Features", "Staking", "Get HEDRON", "FAQ"],
-    },
-  },
-  {
-    subject: {
-      title: "Build",
-      subtitles: [
-        "Developer Portal",
-        "Ignite CLI",
-        "Cronos SDK",
-        "IBC Protocol",
-      ],
-    },
-  },
-  {
-    subject: {
-      title: "Explore",
-      subtitles: ["Tokens", "Apps & Service", "Wallets", "Gravity DEX", "Blog"],
-    },
-  },
-  {
-    subject: {
-      title: "Participate",
-      subtitles: ["Community", "Contributors", "Events", "Newsletters"],
-    },
-  },
-  {
-    subject: {
-      title: "Resources",
-      subtitles: ["About", "Press Kit", "Design", "Resources"],
-    },
-  },
-];
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: -50,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1.5,
-      delay,
-    },
-  },
-});

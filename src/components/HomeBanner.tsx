@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { textTransition } from "../utils/Transition";
 import Image from "next/image";
 import icosahedron from "../images/icosahedron.png";
 
@@ -79,19 +80,3 @@ export default function HomeBanner() {
     </motion.header>
   );
 }
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: 20,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1,
-      delay,
-    },
-  },
-});

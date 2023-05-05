@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { textTransition } from "../utils/Transition";
 import Image from "next/image";
 import thorus from "../images/thorus.png";
 
@@ -66,19 +67,3 @@ export default function HeartInterchain() {
     </motion.header>
   );
 }
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: 20,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1,
-      delay,
-    },
-  },
-});

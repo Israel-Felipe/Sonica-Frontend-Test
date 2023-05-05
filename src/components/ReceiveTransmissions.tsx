@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { textTransition } from "../utils/Transition";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function ReceiveTransmissions() {
@@ -54,19 +55,3 @@ export default function ReceiveTransmissions() {
     </motion.header>
   );
 }
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: 20,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1,
-      delay,
-    },
-  },
-});

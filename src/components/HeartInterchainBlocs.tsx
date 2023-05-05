@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import { FiChevronRight } from "react-icons/fi";
+import { menuBlocs } from "../utils/Menus";
 import Image, { StaticImageData } from "next/image";
-import marketplace from "../images/marketplace.png";
-import security from "../images/security.png";
-import router from "../images/router.png";
-import custodian from "../images/custodian.png";
+import { textTransition } from "../utils/Transition";
+import { FiChevronRight } from "react-icons/fi";
 
 export default function HeartInterchainBlocs() {
   return (
@@ -15,7 +13,7 @@ export default function HeartInterchainBlocs() {
       className="grid xl:grid-cols-2 xl:w-full
       gap-y-[120px] pt-28 lg:pt-44 m-auto w-3/4"
     >
-      {infosBloc.map((info, i) => (
+      {menuBlocs.map((info, i) => (
         <BlocContainer
           image={info.image}
           title={info.title}
@@ -87,42 +85,3 @@ function BlocContainer({
     </motion.div>
   );
 }
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: 20,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1,
-      delay,
-    },
-  },
-});
-
-const infosBloc = [
-  {
-    image: marketplace,
-    title: "MarketPlace",
-    text: "Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.",
-  },
-  {
-    image: security,
-    title: "Secutiry Provider",
-    text: "With the upcoming Interchain Security feature, HEDRON will soon be securing many chains, in exchange for additional staking rewards.",
-  },
-  {
-    image: router,
-    title: "Router",
-    text: "A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.",
-  },
-  {
-    image: custodian,
-    title: "Custodian",
-    text: "Located at the crossroads of the Interchain, the Hub is extremely secure, the best place to hold digital assets and manage accounts across many chains.",
-  },
-];

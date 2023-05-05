@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { textTransition } from "../utils/Transition";
 import { FiChevronRight } from "react-icons/fi";
 import Image from "next/image";
 import helix from "../images/helix.png";
@@ -127,19 +128,3 @@ export default function ConnectedServices() {
     </header>
   );
 }
-
-const textTransition = (delay: number) => ({
-  hidden: {
-    y: 20,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1,
-      delay,
-    },
-  },
-});
