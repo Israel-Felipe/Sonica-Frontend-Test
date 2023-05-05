@@ -23,7 +23,7 @@ export default function HeartInterchain() {
       >
         <Image
           src={thorus}
-          className="absolute -top-10 lg:-top-60 -left-20 lg:-left-20
+          className="absolute -top-10 md:-top-40 lg:-top-60 -left-20 lg:-left-20
           w-[820px] blur-[14px] -z-40"
           alt="thorus"
         />

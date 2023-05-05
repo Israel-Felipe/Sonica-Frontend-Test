@@ -34,7 +34,7 @@ export default function ConnectedServices() {
         </motion.div>
         <motion.div
           variants={textTransition(0.7)}
-          className="relative flex xl:justify-start sm:text-[24px] px-12 md:px-20 xl:px-0
+          className="relative flex xl:justify-start sm:text-[24px] px-12 md:px-20 lg:px-0 lg:-ml-16
           tracking-widest font-normal text-white text-opacity-60 z-50"
         >
           COMMUNITY-OWNED AND OPERATED
@@ -45,7 +45,7 @@ export default function ConnectedServices() {
           className="relative flex justify-center font-Helvetica lg:text-left 
           text-[45px] sm:text-[80px] md:text-[90px]
           leading-[52px] sm:leading-[100px]
-          px-12 md:px-20 xl:px-0 py-[30px] sm:py-[50px]
+          px-12 md:px-20 xl:px-0 py-[30px] sm:py-[50px] lg:-ml-16 lg:mr-16
           bg-clip-text text-transparent bg-gradient-to-r from-white via white to-gray-500 z-50"
         >
           Enter a Universe of Connected Services.
@@ -55,7 +55,7 @@ export default function ConnectedServices() {
           variants={textTransition(0.7)}
           className="relative flex justify-center xl:text-left tracking-[0.05em]
           sm:text-xl md:text-3xl
-          leading-7 lg:leading-[42px]
+          leading-7 lg:leading-[42px] lg:-ml-16 lg:mr-16
           px-12 sm:px-16 md:px-20 lg:px-56 xl:pr-10 xl:pl-0"
         >
           Cronos apps and services connect using IBC, the Inter-Blockchain
@@ -66,7 +66,7 @@ export default function ConnectedServices() {
         <motion.div
           variants={textTransition(0.7)}
           className="flex xl:justify-start
-          px-12 md:px-20 lg:px-0 pt-12 gap-12 sm:gap-20 text-[16px] sm:text-[20px]
+          px-12 md:px-20 lg:px-0 pt-12 gap-12 sm:gap-20 lg:-ml-16 text-[16px] sm:text-[20px]
           "
         >
           <div className="flex justify-center">
@@ -104,7 +104,7 @@ export default function ConnectedServices() {
           >
             265+
           </h1>
-          <span className="font-dm font-normal text-[25px] sm:text-[30px] leading-10">
+          <span className="font-normal text-[25px] sm:text-[30px] leading-10">
             App & Services
           </span>
         </motion.div>
@@ -117,7 +117,7 @@ export default function ConnectedServices() {
           >
             $63B+
           </h1>
-          <span className="font-dm font-normal text-[25px] sm:text-[30px] leading-10">
+          <span className="font-normal text-[25px] sm:text-[30px] leading-10">
             Digital assets
           </span>
         </motion.div>
