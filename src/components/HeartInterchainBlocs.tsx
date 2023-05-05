@@ -88,7 +88,7 @@ function BlocContainer({
   );
 }
 
-export const textTransition = (delay: number) => ({
+const textTransition = (delay: number) => ({
   hidden: {
     y: 20,
     opacity: 0,
@@ -104,7 +104,7 @@ export const textTransition = (delay: number) => ({
   },
 });
 
-export const infosBloc = [
+const infosBloc = [
   {
     image: marketplace,
     title: "MarketPlace",

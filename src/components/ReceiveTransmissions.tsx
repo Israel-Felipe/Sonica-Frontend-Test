@@ -55,7 +55,7 @@ export default function ReceiveTransmissions() {
   );
 }
 
-export const textTransition = (delay: number) => ({
+const textTransition = (delay: number) => ({
   hidden: {
     y: 20,
     opacity: 0,

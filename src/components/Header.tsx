@@ -1,5 +1,5 @@
-import { FiChevronRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { FiChevronRight } from "react-icons/fi";
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       whileInView="show"
       viewport={{ amount: 0.25 }}
       variants={textTransition(0.4)}
-      className="max-w-screen-xl mx-auto
+      className="mx-auto
       py-6 sm:py-8 md:py-16 lg:py-16
       px-8 md:px-16 lg:px-14 xl:px-10 2xl:px-0"
     >
@@ -19,9 +19,9 @@ export default function Header() {
           className="hidden item-center md:flex font-medium text-xs mt-2 ml-20
           sm:text-sm lg:text-[20px]"
         >
-          <CustomLink href="#">Learn</CustomLink>
-          <CustomLink href="#">Build</CustomLink>
-          <CustomLink href="#">Explore</CustomLink>
+          <a href="#">Learn</a>
+          <a href="#">Build</a>
+          <a href="#">Explore</a>
         </div>
 
         <a
@@ -36,11 +36,7 @@ export default function Header() {
   );
 }
 
-function CustomLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
-  return <a className="mx-6 cursor-pointer" {...props} />;
-}
-
-export const textTransition = (delay: number) => ({
+const textTransition = (delay: number) => ({
   hidden: {
     y: -50,
     opacity: 0,

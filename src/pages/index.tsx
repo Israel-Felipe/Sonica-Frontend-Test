@@ -5,6 +5,7 @@ import ConnectedServices from "../components/ConnectedServices";
 import HeartInterchain from "../components/HeartInterchain";
 import HeartInterchainContainerBlocs from "../components/HeartInterchainBlocs";
 import ReceiveTransmissions from "../components/ReceiveTransmissions";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -17,13 +18,15 @@ export default function Home() {
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
       </Head>
-      <Header />
-      <main className="min-h-xl max-w-screen-xl m-auto flex-col justify-center items-start ">
+
+      <main className="max-w-screen-xl m-auto">
+        <Header />
         <HomeBanner />
         <ConnectedServices />
         <HeartInterchain />
         <HeartInterchainContainerBlocs />
         <ReceiveTransmissions />
+        <Footer />
       </main>
     </>
   );
