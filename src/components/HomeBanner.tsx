@@ -40,7 +40,7 @@ export default function HomeBanner() {
       <motion.span
         variants={textTransition(0.7)}
         className="relative flex justify-center font-Helvetica text-center
-        text-[45px] sm:text-[80px] md:text-[100px] lg:text-[125px] xl:text-[153px]
+        text-[45px] sm:text-[80px] md:text-[90px] lg:text-[125px] xl:text-[153px]
         leading-[60px] sm:leading-[100px] xl:leading-[180px]
         px-5 py-16 sm:py-8 md:py-3 tracking-[0.02em]
         bg-clip-text text-transparent bg-gradient-to-r from-white via white to-gray-500 z-50"
@@ -52,7 +52,7 @@ export default function HomeBanner() {
         variants={textTransition(1)}
         className="relative flex justify-center text-center text-lg tracking-[0.05em]
         sm:text-xl md:text-3xl
-        px-8 sm:px-16 md:px-28 lg:px-56 lg:leading-[52px] z-50"
+        px-8 sm:px-16 md:px-28 lg:px-56 md:leading-[52px] z-50"
       >
         Cronos is an ever expanding ecosystem of connected apps and services,
         built for a decentralized future.

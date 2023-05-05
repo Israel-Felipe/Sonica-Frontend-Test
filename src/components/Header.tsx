@@ -8,7 +8,7 @@ export default function Header() {
       whileInView="show"
       viewport={{ amount: 0.25 }}
       variants={textTransition(0.4)}
-      className="mx-auto
+      className="w-screen-xl mx-auto
       py-6 sm:py-8 md:py-16 lg:py-16
       px-8 md:px-16 lg:px-14 xl:px-10 2xl:px-0"
     >
@@ -16,7 +16,7 @@ export default function Header() {
         <h1 className="font-medium text-base md:text-lg lg:text-2xl">CRONOS</h1>
 
         <div
-          className="hidden item-center md:flex font-medium text-xs mt-2 ml-20
+          className="hidden item-center md:flex font-medium text-xs mt-2 ml-20 md:gap-[60px] lg:gap-[82px]
           sm:text-sm lg:text-[20px]"
         >
           <a href="#">Learn</a>
